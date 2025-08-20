@@ -1,28 +1,57 @@
-# 🌲 Cypress, do Zero à Nuvem ☁️
+# cypress-do-zero-a-nuvem
 
-👋 Seja bem-vindo(a)!
+Projeto de exemplo para demonstrar o comando customizado do Cypress `cy.dataTest`.
 
-É muito bom tê-lo(a) aqui. Tenho certeza que você vai amar esse curso. ❤️
+## Pré-requisitos
 
-## O que você vai aprender?
+É necessário ter **Node.js** e **npm** instalados para rodar este projeto.
 
-- Como configurar um projeto Cypress do zero
-- Como visitar páginas locais e remotas
-- Como lidar com os elementos mais comuns encontrados em aplicações web
-- Como testar upload de arquivos
-- Como realizar as mais diversas verificações de resultados esperados
-- Como criar comandos customizados
-- Como lidar com links que abrem em outra aba do navegador
-- Como rodar testes simulando as dimensões de um dispositivo móvel
-- Como resolver os mesmos problemas de diferentes formas, conhecendo a [API do Cypress](https://docs.cypress.io/api/table-of-contents)
-- Como criar uma documentação mínima para seu projeto de testes automatizados
-- Como executar os testes em um _workflow_ de integração contínua sempre que mudanças ocorrerem no código da aplicação (ou dos testes)
-- Como integrar seu _workflow_ de integração contínua com o Cypress Cloud (o serviço de gestão de testes do Cypress na nuvem)
+> Foram utilizadas as versões `2.42.1` e `9.5.0` do Node.js e npm, respectivamente.  
+> Recomenda-se utilizar as mesmas ou versões mais recentes.
 
-## Vamos começar?
+## Instalação
 
-Vá para a seção [estrutura do curso](./lessons/_course-structure_.md).
+Execute o comando abaixo para instalar as dependências de desenvolvimento:
 
-___
+```bash
+npm install
+```
 
-Este é um curso da **Escola Talking About Testing**.
+ou, na forma abreviada:
+
+```bash
+npm i
+```
+
+## Testes
+
+> **Observação:** Antes de rodar os testes, crie uma cópia do arquivo `cypress.env.example.json` com o nome `cypress.env.json`.  
+> Esse arquivo deve ser atualizado com credenciais válidas em um ambiente real.  
+>
+> O arquivo `cypress.env.json` está listado no [`.gitignore`](./.gitignore), garantindo que informações confidenciais não sejam versionadas.
+
+Para rodar os testes em **modo headless**, use:
+
+```bash
+npm test
+```
+
+ou, de forma abreviada:
+
+```bash
+npm t
+```
+
+Para abrir o Cypress em **modo interativo**, execute:
+
+```bash
+npm run cy:open
+```
+
+## Apoie este projeto
+
+Se este projeto foi útil para você, deixe uma ⭐.
+
+---
+
+Projeto criado com 💚 por [elivelton].
